@@ -9,7 +9,7 @@ O programa deverá estar funcionando no endereço `http://localhost:4200/`.
 
 ## PrintScreen da Aplicação
 
-### Tela de cadastro de cliente / acomodação 
+### Tela de cadastro cliente / acomodação 
 ![1 - reserva](https://github.com/edersonabreu/reserva-hotel-angular-poo/assets/29956737/40852db8-fda9-4288-98fd-9da43182bfb4)
 
 ### Cliente / acomodação já cadastrados 
