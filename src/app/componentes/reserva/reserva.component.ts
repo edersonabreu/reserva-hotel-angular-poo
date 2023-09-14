@@ -13,6 +13,7 @@ import { HotelService } from 'src/app/servicos/hotel.service';
   styleUrls: ['./reserva.component.css']
 })
 export class ReservaComponent {
+  clienteInput = {nome: ''}
   cliente = {nome: ''};
   tipoCliente = 'normal';
   quarto!: Quarto;
@@ -25,10 +26,10 @@ export class ReservaComponent {
 
   criarCliente(): void{
     if(this.tipoCliente === 'normal'){
-      this.cliente = new ClienteNomal(this.cliente.nome, 'Normal');
+      this.cliente = new ClienteNomal(this.clienteInput.nome, 'Normal');
       this.tipoQuarto = 'simples';
     }else if(this.tipoCliente === 'vip'){
-      this.cliente = new ClienteVip(this.cliente.nome, 'VIP');
+      this.cliente = new ClienteVip(this.clienteInput.nome, 'VIP');
       this.tipoQuarto = 'deluxo';
     }
     
